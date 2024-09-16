@@ -1,7 +1,4 @@
 import streamlit as st
-import plotly.express as px
-
-
 
 with st.sidebar:
     st.write("This is a sidebar")
