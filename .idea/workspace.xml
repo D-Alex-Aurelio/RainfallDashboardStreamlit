@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53448e68-2ad0-4c80-8fa8-8e4ba0929037" name="Changes" comment="">
+    <list default="true" id="53448e68-2ad0-4c80-8fa8-8e4ba0929037" name="Changes" comment="Added Data">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamlit_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/streamlit_app.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +91,29 @@
       <option name="presentableId" value="Default" />
       <updated>1726466231554</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added Upload Feature">
+      <option name="closed" value="true" />
+      <created>1726490959069</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1726490959069</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added Data">
+      <option name="closed" value="true" />
+      <created>1726490971161</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1726490971161</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added Upload Feature" />
+    <MESSAGE value="Added Data" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Data" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
