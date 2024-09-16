@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53448e68-2ad0-4c80-8fa8-8e4ba0929037" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/sl1.py" beforeDir="false" afterPath="$PROJECT_DIR$/sl1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sl1.py" beforeDir="false" afterPath="$PROJECT_DIR$/streamlit_app.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -1,11 +1,9 @@
 import streamlit as st
 
 with st.sidebar:
-    st.write("This is a sidebar")
-    st.write("I am in a sidebar")
     uploaded_file = st.file_uploader("Choose a CSV file")
 
-st.write("I am not in a sidebar")
+st.title("Rainfall Analysis Dashboard")
 
 tab1, tab2, tab3 = st.tabs(["Yearly Analysis", "Monthly Analysis", "Daily Analysis"])
 
