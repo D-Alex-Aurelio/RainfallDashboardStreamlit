@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53448e68-2ad0-4c80-8fa8-8e4ba0929037" name="Changes" comment="Added Yearly and Monthly plots" />
+    <list default="true" id="53448e68-2ad0-4c80-8fa8-8e4ba0929037" name="Changes" comment="Added requirements.txt file">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamlit_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/streamlit_app.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -121,7 +124,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726550146196</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added requirements.txt file">
+      <option name="closed" value="true" />
+      <created>1726550426974</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1726550426974</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -129,7 +140,8 @@
     <MESSAGE value="Added Data" />
     <MESSAGE value="Added File Prep and Assumptions to Dashboard" />
     <MESSAGE value="Added Yearly and Monthly plots" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Yearly and Monthly plots" />
+    <MESSAGE value="Added requirements.txt file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added requirements.txt file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
