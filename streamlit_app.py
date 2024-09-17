@@ -56,36 +56,49 @@ tab1, tab2, tab3 = st.tabs(["Yearly Analysis", "Monthly Analysis", "Daily Analys
 
 with tab1:
     st.header("Yearly Rainfall Trend and Statistics")
-    yearly_plot_1 = px.bar(df_year)
+    yearly_plot_1 = px.bar(df_year,
+                           x=df_year.index,
+                           y="RAINFALL")
+    yearly_plot_1.update_layout(xaxis_title="Year",
+                                yaxis_title="Rainfall, meters")
+    yearly_plot_1.update_traces(hovertemplate="Year: %{x} <br>Rainfall: %{y} meters")
+
     st.plotly_chart(yearly_plot_1)
     st.write(df_year.describe())
 
 with tab2:
     st.header("Monthly Rainfall Trend")
-    monthly_plot_1 = px.imshow(df_month, color_continuous_scale="Blues")
+    monthly_plot_1 = px.imshow(df_month,
+                               color_continuous_scale="Blues",
+                               labels=dict(x="Year",y="Month",color="Rainfall, cm"),
+                               y=["Jan","Feb","Mar","Apr","May","June",
+                                  "July","Aug","Sept","Oct","Nov","Dec"])
     st.plotly_chart(monthly_plot_1)
 
     st.header("Monthly Rainfall Statistics")
-    monthly_plot_2 = px.box(df_month)
+    monthly_plot_2 = px.box(df_month).update_layout(xaxis_title="Year",
+                                                    yaxis_title="Rainfall, cm")
     st.plotly_chart(monthly_plot_2)
     st.write(df_month.describe())
 
 with tab3:
     st.header("Daily Rainfall Trend")
-
-    daily_plot_1 = px.line(df)
+    daily_plot_1 = px.line(df,
+                           y="RAINFALL")
+    daily_plot_1.update_layout(xaxis_title="",
+                               yaxis_title="Rainfall, mm")
+    daily_plot_1.update_traces(hovertemplate="Date: %{x} <br>Rainfall: %{y} mm")
     st.plotly_chart(daily_plot_1)
 
     st.header("Daily Rainfall Statistics")
-
     st.write(df_rf["RAINFALL"].describe())
-
     daily_plot_2 = px.line(df_rf,
                            x="RAINFALL",
                            y="POSITION")
+    daily_plot_2.update_layout(xaxis_title="Rainfall, mm",
+                               yaxis_title="Position")
+    daily_plot_2.update_traces(hovertemplate="Position: %{y:.3f} <br>Rainfall, mm: %{x}")
     st.plotly_chart(daily_plot_2)
-
-    st.write("Percentiles")
     rf_percs = [0,10,20,30,40,50,60,70,80,90,95,99]
     rf_vals = []
     for rf_perc in rf_percs:
