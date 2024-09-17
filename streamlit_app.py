@@ -8,6 +8,9 @@ df = pd.read_csv("data/default data.csv")
 
 with st.sidebar:
     uploaded_file = st.file_uploader("Choose a CSV file")
+    if uploaded_file is not None:
+        df = pd.read_csv(uploaded_file)
+        st.write(df.head())
     st.divider()
     st.header("File Preparation")
     st.write("1. Data must be in the following format:")
@@ -19,13 +22,6 @@ with st.sidebar:
     })
     st.write(df_example)
     st.write("2. Rainfall must be a number")
-
-st.title("Rainfall Analysis Dashboard")
-st.header("Assumptions")
-st.write("Missing data is equivalent to zero.")
-
-if uploaded_file is not None:
-    df = pd.read_csv(uploaded_file)
 
 df.columns = ["YEAR","MONTH","DAY","RAINFALL"]
 df = pd.DataFrame(
@@ -52,6 +48,9 @@ df_rf = pd.DataFrame({"RAINFALL":df["RAINFALL"].values})
 df_rf = df_rf.sort_values(by="RAINFALL", ignore_index=True)
 df_rf["POSITION"] = (list(range(1,df_rf.count().iloc[0]+1,1)))/(df_rf.count().iloc[0]+1)
 
+st.title("Rainfall Analysis Dashboard")
+st.header("Assumptions")
+st.write("Missing data is equivalent to zero.")
 
 tab1, tab2, tab3 = st.tabs(["Yearly Analysis", "Monthly Analysis", "Daily Analysis"])
 

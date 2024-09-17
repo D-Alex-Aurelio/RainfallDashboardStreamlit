@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53448e68-2ad0-4c80-8fa8-8e4ba0929037" name="Changes" comment="Changed percentile table values">
+    <list default="true" id="53448e68-2ad0-4c80-8fa8-8e4ba0929037" name="Changes" comment="Added function to rename columns to the desired column name">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/default data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/default data.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/streamlit_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/streamlit_app.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -173,7 +172,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726560129659</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Added function to rename columns to the desired column name">
+      <option name="closed" value="true" />
+      <created>1726583979536</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1726583979536</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -198,6 +205,7 @@
     <MESSAGE value="Removed unneeded files" />
     <MESSAGE value="Updated plot labels and hover data" />
     <MESSAGE value="Changed percentile table values" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed percentile table values" />
+    <MESSAGE value="Added function to rename columns to the desired column name" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added function to rename columns to the desired column name" />
   </component>
 </project>
