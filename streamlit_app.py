@@ -27,6 +27,7 @@ st.write("Missing data is equivalent to zero.")
 if uploaded_file is not None:
     df = pd.read_csv(uploaded_file)
 
+df.columns = ["YEAR","MONTH","DAY","RAINFALL"]
 df = pd.DataFrame(
     index = pd.to_datetime(df[["YEAR","MONTH","DAY"]]),
     data={
