@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53448e68-2ad0-4c80-8fa8-8e4ba0929037" name="Changes" comment="Removed unneeded files">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="53448e68-2ad0-4c80-8fa8-8e4ba0929037" name="Changes" comment="Updated plot labels and hover data">
       <change beforePath="$PROJECT_DIR$/streamlit_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/streamlit_app.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -156,7 +155,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726556453107</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Updated plot labels and hover data">
+      <option name="closed" value="true" />
+      <created>1726559830257</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1726559830257</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -179,6 +186,7 @@
     <MESSAGE value="Added Headers to Yearly and Monthly Analysis" />
     <MESSAGE value="Added Daily Analysis" />
     <MESSAGE value="Removed unneeded files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed unneeded files" />
+    <MESSAGE value="Updated plot labels and hover data" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated plot labels and hover data" />
   </component>
 </project>

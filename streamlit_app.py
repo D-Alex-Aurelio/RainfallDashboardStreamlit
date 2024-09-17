@@ -99,7 +99,7 @@ with tab3:
                                yaxis_title="Position")
     daily_plot_2.update_traces(hovertemplate="Position: %{y:.3f} <br>Rainfall, mm: %{x}")
     st.plotly_chart(daily_plot_2)
-    rf_percs = [0,10,20,30,40,50,60,70,80,90,95,99]
+    rf_percs = [70,75,80,85,90,95,99]
     rf_vals = []
     for rf_perc in rf_percs:
         rf_vals.append(df_rf[df_rf["POSITION"]>rf_perc/100]["RAINFALL"].iloc[0])
