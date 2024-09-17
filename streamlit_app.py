@@ -51,11 +51,19 @@ df_month = pd.pivot_table(df_month,
 tab1, tab2, tab3 = st.tabs(["Yearly Analysis", "Monthly Analysis", "Daily Analysis"])
 
 with tab1:
-    st.header("This is for the Yearly Analysis of Rainfall Data")
-    st.write(df_year)
+    st.header("Yearly Rainfall Trend")
+    yearly_plot_1 = px.bar(df_year)
+    st.plotly_chart(yearly_plot_1)
+    st.write(f"Max: {df_year.max().iloc[0]} meters")
+    st.write(f"Min: {df_year.min().iloc[0]} meters")
+    st.write(f"Median: {df_year.median().iloc[0]} meters")
+
 with tab2:
-    st.header("This is for the Monthly Analysis of Rainfall Data")
-    st.write(df_month)
+    st.header("Monthly Rainfall Trend")
+    monthly_plot_1 = px.imshow(df_month, color_continuous_scale="Blues")
+    st.plotly_chart(monthly_plot_1)
+    monthly_plot_2 = px.box(df_month)
+    st.plotly_chart(monthly_plot_2)
 
 with tab3:
     st.header("This is for the Daily Analysis of Rainfall Data")
