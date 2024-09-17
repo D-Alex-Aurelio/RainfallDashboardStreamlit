@@ -22,6 +22,9 @@ with st.sidebar:
     })
     st.write(df_example)
     st.write("2. Rainfall must be a number")
+    st.divider()
+    st.header("Assumptions")
+    st.write("Missing data is equivalent to zero.")
 
 df.columns = ["YEAR","MONTH","DAY","RAINFALL"]
 df = pd.DataFrame(
@@ -49,8 +52,6 @@ df_rf = df_rf.sort_values(by="RAINFALL", ignore_index=True)
 df_rf["POSITION"] = (list(range(1,df_rf.count().iloc[0]+1,1)))/(df_rf.count().iloc[0]+1)
 
 st.title("Rainfall Analysis Dashboard")
-st.header("Assumptions")
-st.write("Missing data is equivalent to zero.")
 
 tab1, tab2, tab3 = st.tabs(["Yearly Analysis", "Monthly Analysis", "Daily Analysis"])
 
