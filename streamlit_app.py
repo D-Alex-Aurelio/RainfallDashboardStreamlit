@@ -145,38 +145,56 @@ with tab1:
 
 with tab2:
     st.header("Yearly Rainfall Trend and Statistics")
+    yearly_color = st.color_picker("Pick a color:","#2892A2")
+    st.write("The color is", yearly_color)
     yearly_plot_1 = px.bar(df_year,
                            x=df_year.index,
                            y="RAINFALL")
     yearly_plot_1.update_layout(xaxis_title="Year",
                                 yaxis_title="Rainfall, meters")
-    yearly_plot_1.update_traces(hovertemplate="Year: %{x} <br>Rainfall: %{y} meters")
+    yearly_plot_1.update_traces(hovertemplate="Year: %{x} <br>Rainfall: %{y} meters",
+                                marker_color=yearly_color)
 
     st.plotly_chart(yearly_plot_1)
     st.write(df_year.describe())
 
 with tab3:
     st.header("Monthly Rainfall Trend")
+    monthly_color_option = st.selectbox("Color Scheme:",
+                          ("Blues","Reds","Greens","Oranges", "Greys"))
+    st.write("You selected:", monthly_color_option)
+
     monthly_plot_1 = px.imshow(df_month,
-                               color_continuous_scale="Blues",
+                               color_continuous_scale=monthly_color_option,
                                labels=dict(x="Year",y="Month",color="Rainfall, cm"),
                                y=["Jan","Feb","Mar","Apr","May","June",
                                   "July","Aug","Sept","Oct","Nov","Dec"])
     st.plotly_chart(monthly_plot_1)
 
     st.header("Monthly Rainfall Statistics")
+
+    monthly_color = st.color_picker("Pick a color:","#9787d4")
+    st.write("The color is", monthly_color)
+
     monthly_plot_2 = px.box(df_month).update_layout(xaxis_title="Year",
                                                     yaxis_title="Rainfall, cm")
+    monthly_plot_2.update_traces(marker_color=monthly_color)
+
     st.plotly_chart(monthly_plot_2)
     st.write(df_month.describe())
 
 with tab4:
     st.header("Daily Rainfall Trend")
+
+    daily_color = st.color_picker("Pick a color:", "#D487D3")
+    st.write("The color is", daily_color)
+
     daily_plot_1 = px.line(df,
                            y="RAINFALL")
     daily_plot_1.update_layout(xaxis_title="",
                                yaxis_title="Rainfall, mm")
-    daily_plot_1.update_traces(hovertemplate="Date: %{x} <br>Rainfall: %{y} mm")
+    daily_plot_1.update_traces(hovertemplate="Date: %{x} <br>Rainfall: %{y} mm",
+                               line_color = daily_color)
     st.plotly_chart(daily_plot_1)
 
     st.header("Daily Rainfall Statistics")
@@ -186,7 +204,9 @@ with tab4:
                            y="POSITION")
     daily_plot_2.update_layout(xaxis_title="Rainfall, mm",
                                yaxis_title="Position")
-    daily_plot_2.update_traces(hovertemplate="Position: %{y:.3f} <br>Rainfall, mm: %{x}")
+    daily_plot_2.update_traces(hovertemplate="Position: %{y:.3f} <br>Rainfall, mm: %{x}",
+                               line_color = daily_color)
+
     st.plotly_chart(daily_plot_2)
     rf_percs = [70,75,80,85,90,95,99]
     rf_vals = []
