@@ -116,6 +116,16 @@ df = pd.DataFrame(
     }
 )
 
+start_date = df.index[0].date()
+end_date = df.index[-1].date()
+new_dates = pd.date_range(start=start_date,end=end_date,freq="D")
+
+df = df.reindex(new_dates)
+df = df.rename_axis("date")
+df = df.fillna(0)
+
+
+
 # convert mm to m for yearly analysis
 df_year = df.groupby(by=df.index.year).sum()/1000
 
@@ -140,6 +150,9 @@ st.title("Rainfall Analysis Dashboard")
 tab1, tab2, tab3, tab4 = st.tabs(["Raw Data","Yearly Analysis", "Monthly Analysis", "Daily Analysis"])
 
 with tab1:
+    st.write(start_date)
+    st.write(end_date)
+
     st.header("Raw Data")
     st.dataframe(filter_dataframe(df),use_container_width=True)
 

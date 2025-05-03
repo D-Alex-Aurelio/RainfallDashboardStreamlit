@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53448e68-2ad0-4c80-8fa8-8e4ba0929037" name="Changes" comment="Added raw data tab with filter">
+    <list default="true" id="53448e68-2ad0-4c80-8fa8-8e4ba0929037" name="Changes" comment="Added color picker function">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/streamlit_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/streamlit_app.py" afterDir="false" />
     </list>
@@ -204,7 +204,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746006133278</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Added color picker function">
+      <option name="closed" value="true" />
+      <created>1746090487984</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1746090487985</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -233,6 +241,7 @@
     <MESSAGE value="Updated upload function" />
     <MESSAGE value="Updated assumptions in sidebar" />
     <MESSAGE value="Added raw data tab with filter" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added raw data tab with filter" />
+    <MESSAGE value="Added color picker function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added color picker function" />
   </component>
 </project>
